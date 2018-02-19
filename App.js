@@ -84,20 +84,22 @@ export default class App extends Component<Props> {
     return (
       <View style={ styles.container }>
         { this.state.isUserLoggedIn ?
-          <Text style={ styles.loggedInText }>
-            Logged In as { `${this.state.user.givenName} ${this.state.user.familyName}` }
-          </Text> :
+          <View style={ styles.container }>
+            <Text style={ styles.loggedInText }>
+              Logged In as { `${this.state.user.givenName} ${this.state.user.familyName}` }
+            </Text>
+            <TouchableWithoutFeedback onPress={this.signOutFromGoogle.bind(this)}>
+              <View style={ styles.button }>
+                <Text style={ styles.buttonText }>Signout from Google</Text>
+              </View>
+            </TouchableWithoutFeedback>
+          </View> :
           <TouchableWithoutFeedback onPress={this.signInWithGoogle.bind(this)}>
             <View style={ styles.button }>
               <Text style={ styles.buttonText }>Login With Google</Text>
             </View>
           </TouchableWithoutFeedback>
         }
-        <TouchableWithoutFeedback onPress={this.signOutFromGoogle.bind(this)}>
-          <View style={ styles.button }>
-            <Text style={ styles.buttonText }>Signout from Google</Text>
-          </View>
-        </TouchableWithoutFeedback>
       </View>
     );
   }
