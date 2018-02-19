@@ -1,0 +1,2 @@
+target 'RNGoogleAuth'
+pod 'Google/SignIn'
