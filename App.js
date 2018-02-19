@@ -46,8 +46,8 @@ export default class App extends Component<Props> {
     try {
       await GoogleSignin.hasPlayServices({ autoResolve: true });
       await GoogleSignin.configure({
-        iosClientId: '851068558963-jqtq3q6mk7vpjvkmd348nauqbpu8589n.apps.googleusercontent.com',
-        webClientId: '851068558963-9s6b725j9q0vv8dso6ejr0mb0k8kecld.apps.googleusercontent.com',
+        iosClientId: '',
+        webClientId: '',
         offlineAccess: false
       });
 
