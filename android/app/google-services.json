@@ -1,7 +1,9 @@
 {
   "project_info": {
     "project_number": "851068558963",
-    "project_id": "my-project-1518687524267"
+    "firebase_url": "https://my-project-1518687524267.firebaseio.com",
+    "project_id": "my-project-1518687524267",
+    "storage_bucket": "my-project-1518687524267.appspot.com"
   },
   "client": [
     {
@@ -12,6 +14,10 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "851068558963-sttlr400alpmenql55grg00csp2o50b5.apps.googleusercontent.com",
+          "client_type": 3
+        },
         {
           "client_id": "851068558963-5tkjai06t0sm0ho7e0d6sr7b7c21bvd5.apps.googleusercontent.com",
           "client_type": 1,
@@ -35,11 +41,23 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851068558963-sttlr400alpmenql55grg00csp2o50b5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "851068558963-jqtq3q6mk7vpjvkmd348nauqbpu8589n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mavericks-consulting.RNGoogleAuth"
+              }
+            }
+          ]
         },
         "ads_service": {
-          "status": 1
+          "status": 2
         }
       }
     }
